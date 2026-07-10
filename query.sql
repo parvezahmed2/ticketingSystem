@@ -83,3 +83,9 @@ FROM matches
 WHERE tournament_category = 'Champions League'
   AND match_status = 'Available';
 
+
+
+SELECT user_id, full_name, email
+FROM users
+WHERE full_name ILIKE 'Tanvir%'
+   OR full_name ILIKE '%Haque%';
