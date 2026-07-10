@@ -124,3 +124,12 @@ WHERE total_cost >
     SELECT AVG(total_cost)
     FROM bookings
 );
+
+
+-- query 7 
+
+SELECT match_id,fixture,base_ticket_price
+FROM matches
+ORDER BY base_ticket_price DESC
+OFFSET 1
+LIMIT 2;
